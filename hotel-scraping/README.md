@@ -1,33 +1,32 @@
-# Bright Data Hotel Search Scraper
+# Bright Data 酒店搜索抓取器
 
-This project demonstrates how to use Bright Data's Scraping Browser to search for hotels on Booking.com. It provides a practical example of web scraping with automated browser control.
+本项目演示如何使用 Bright Data 的 Scraping Browser 在 Booking.com 上搜索酒店。它提供了一个通过自动化浏览器控制进行网页抓取的实用示例。
 
-<a href="https://codesandbox.io/p/devbox/github/luminati-io/bright-data-scraping-browser-nodejs-project?file=%2Fbooking-hotel-scraping.js" target="_blank" rel="noopener">Open in CodeSandbox</a>, sign in with GitHub account, then fork the repository to begin making changes.
+<a href="https://codesandbox.io/p/devbox/github/luminati-io/bright-data-scraping-browser-nodejs-project?file=%2Fbooking-hotel-scraping.js" target="_blank" rel="noopener">在 CodeSandbox 中打开</a>，使用 GitHub 账号登录，然后 fork 该仓库以开始修改。
 
-### Getting Started
+### 开始使用
 
-1. Replace `YOUR_BRIGHT_DATA_SCRAPING_BROWSER_ENDPOINT` with your actual Bright Data scraping browser webSocket endpoint in `booking-hotel-scraping.js`
-2. Run `node booking-hotel-scraping.js` to start scraping
+1. 在 `booking-hotel-scraping.js` 中将 `YOUR_BRIGHT_DATA_SCRAPING_BROWSER_ENDPOINT` 替换为你实际的 Bright Data Scraping Browser WebSocket 端点
+2. 运行 `node booking-hotel-scraping.js` 开始抓取
 
+## 💻 使用方法
 
-## 💻 Usage
-
-1. Modify search parameters in `booking-hotel-scraping.js`:
+1. 在 `booking-hotel-scraping.js` 中修改搜索参数：
    ```javascript
-   const SEARCH_LOCATION = "New York";  // Change to your desired location
-   const CHECK_IN_DAYS_FROM_NOW = 1;    // Adjust check-in date
-   const CHECK_OUT_DAYS_FROM_NOW = 2;   // Adjust check-out date
+   const SEARCH_LOCATION = "New York";  // 修改为你想要的地点
+   const CHECK_IN_DAYS_FROM_NOW = 1;    // 调整入住日期
+   const CHECK_OUT_DAYS_FROM_NOW = 2;   // 调整退房日期
    ```
 
-2. Run the script:
+2. 运行脚本：
    ```bash
    node booking-hotel-scraping.js
    ```
 
-## 📊 Example Output
+## 📊 示例输出
 
 ```
-📊 Search Results:
+📊 搜索结果:
 ==================
 ┌─────────┬─────┬────────────────────┬──────────┬─────────┐
 │ (index) │  #  │     Hotel Name     │  Price   │ Rating  │
